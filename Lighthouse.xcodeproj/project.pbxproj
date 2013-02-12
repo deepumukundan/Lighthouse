@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A267772C4D848768E76E7BA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 86CD04EC08BE434BB9B84D75 /* libPods.a */; };
 		718B8D3716C9BEAE001E21B3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 718B8D3616C9BEAE001E21B3 /* UIKit.framework */; };
 		718B8D3916C9BEAE001E21B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 718B8D3816C9BEAE001E21B3 /* Foundation.framework */; };
 		718B8D3B16C9BEAE001E21B3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 718B8D3A16C9BEAE001E21B3 /* CoreGraphics.framework */; };
@@ -18,9 +19,16 @@
 		718B8D4D16C9BEAE001E21B3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 718B8D4C16C9BEAE001E21B3 /* Default-568h@2x.png */; };
 		718B8D5016C9BEAE001E21B3 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 718B8D4E16C9BEAE001E21B3 /* MainStoryboard.storyboard */; };
 		718B8D5316C9BEAE001E21B3 /* DMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 718B8D5216C9BEAE001E21B3 /* DMViewController.m */; };
+		718B8D5A16C9BED8001E21B3 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 718B8D5916C9BED8001E21B3 /* icon.png */; };
+		718B8D5C16C9BEDC001E21B3 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 718B8D5B16C9BEDB001E21B3 /* icon@2x.png */; };
+		718B8D6016C9BF21001E21B3 /* SoundEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 718B8D5F16C9BF21001E21B3 /* SoundEffect.m */; };
+		718B8D6416C9C0F9001E21B3 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 718B8D6316C9C0F8001E21B3 /* AudioToolbox.framework */; };
+		718B8D6516C9C113001E21B3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 718B8D6116C9C0E3001E21B3 /* AVFoundation.framework */; };
+		71E3745F16CAE64B002B53A5 /* laser.wav in Resources */ = {isa = PBXBuildFile; fileRef = 71E3745E16CAE64B002B53A5 /* laser.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B709CD2284F43E489AD2753 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		718B8D3316C9BEAE001E21B3 /* Lighthouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lighthouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		718B8D3616C9BEAE001E21B3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		718B8D3816C9BEAE001E21B3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -37,6 +45,14 @@
 		718B8D4F16C9BEAE001E21B3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		718B8D5116C9BEAE001E21B3 /* DMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMViewController.h; sourceTree = "<group>"; };
 		718B8D5216C9BEAE001E21B3 /* DMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMViewController.m; sourceTree = "<group>"; };
+		718B8D5916C9BED8001E21B3 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../icon.png; sourceTree = "<group>"; };
+		718B8D5B16C9BEDB001E21B3 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "../icon@2x.png"; sourceTree = "<group>"; };
+		718B8D5E16C9BF21001E21B3 /* SoundEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SoundEffect.h; path = ../SoundEffect.h; sourceTree = "<group>"; };
+		718B8D5F16C9BF21001E21B3 /* SoundEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SoundEffect.m; path = ../SoundEffect.m; sourceTree = "<group>"; };
+		718B8D6116C9C0E3001E21B3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		718B8D6316C9C0F8001E21B3 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		71E3745E16CAE64B002B53A5 /* laser.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = laser.wav; sourceTree = "<group>"; };
+		86CD04EC08BE434BB9B84D75 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,9 +60,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				718B8D6516C9C113001E21B3 /* AVFoundation.framework in Frameworks */,
+				718B8D6416C9C0F9001E21B3 /* AudioToolbox.framework in Frameworks */,
 				718B8D3716C9BEAE001E21B3 /* UIKit.framework in Frameworks */,
 				718B8D3916C9BEAE001E21B3 /* Foundation.framework in Frameworks */,
 				718B8D3B16C9BEAE001E21B3 /* CoreGraphics.framework in Frameworks */,
+				1A267772C4D848768E76E7BA /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +78,7 @@
 				718B8D3C16C9BEAE001E21B3 /* Lighthouse */,
 				718B8D3516C9BEAE001E21B3 /* Frameworks */,
 				718B8D3416C9BEAE001E21B3 /* Products */,
+				0B709CD2284F43E489AD2753 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,9 +93,12 @@
 		718B8D3516C9BEAE001E21B3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				718B8D3616C9BEAE001E21B3 /* UIKit.framework */,
-				718B8D3816C9BEAE001E21B3 /* Foundation.framework */,
+				718B8D6316C9C0F8001E21B3 /* AudioToolbox.framework */,
+				718B8D6116C9C0E3001E21B3 /* AVFoundation.framework */,
 				718B8D3A16C9BEAE001E21B3 /* CoreGraphics.framework */,
+				718B8D3816C9BEAE001E21B3 /* Foundation.framework */,
+				86CD04EC08BE434BB9B84D75 /* libPods.a */,
+				718B8D3616C9BEAE001E21B3 /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -85,9 +108,9 @@
 			children = (
 				718B8D4516C9BEAE001E21B3 /* DMAppDelegate.h */,
 				718B8D4616C9BEAE001E21B3 /* DMAppDelegate.m */,
-				718B8D4E16C9BEAE001E21B3 /* MainStoryboard.storyboard */,
 				718B8D5116C9BEAE001E21B3 /* DMViewController.h */,
 				718B8D5216C9BEAE001E21B3 /* DMViewController.m */,
+				718B8D4E16C9BEAE001E21B3 /* MainStoryboard.storyboard */,
 				718B8D3D16C9BEAE001E21B3 /* Supporting Files */,
 			);
 			path = Lighthouse;
@@ -96,13 +119,18 @@
 		718B8D3D16C9BEAE001E21B3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				718B8D3E16C9BEAE001E21B3 /* Lighthouse-Info.plist */,
-				718B8D3F16C9BEAE001E21B3 /* InfoPlist.strings */,
-				718B8D4216C9BEAE001E21B3 /* main.m */,
-				718B8D4416C9BEAE001E21B3 /* Lighthouse-Prefix.pch */,
+				71E3745E16CAE64B002B53A5 /* laser.wav */,
+				718B8D4C16C9BEAE001E21B3 /* Default-568h@2x.png */,
 				718B8D4816C9BEAE001E21B3 /* Default.png */,
 				718B8D4A16C9BEAE001E21B3 /* Default@2x.png */,
-				718B8D4C16C9BEAE001E21B3 /* Default-568h@2x.png */,
+				718B8D5916C9BED8001E21B3 /* icon.png */,
+				718B8D5B16C9BEDB001E21B3 /* icon@2x.png */,
+				718B8D3F16C9BEAE001E21B3 /* InfoPlist.strings */,
+				718B8D3E16C9BEAE001E21B3 /* Lighthouse-Info.plist */,
+				718B8D4416C9BEAE001E21B3 /* Lighthouse-Prefix.pch */,
+				718B8D4216C9BEAE001E21B3 /* main.m */,
+				718B8D5E16C9BF21001E21B3 /* SoundEffect.h */,
+				718B8D5F16C9BF21001E21B3 /* SoundEffect.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -117,6 +145,7 @@
 				718B8D2F16C9BEAE001E21B3 /* Sources */,
 				718B8D3016C9BEAE001E21B3 /* Frameworks */,
 				718B8D3116C9BEAE001E21B3 /* Resources */,
+				669180314D424CCE8C462CEE /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -163,10 +192,30 @@
 				718B8D4B16C9BEAE001E21B3 /* Default@2x.png in Resources */,
 				718B8D4D16C9BEAE001E21B3 /* Default-568h@2x.png in Resources */,
 				718B8D5016C9BEAE001E21B3 /* MainStoryboard.storyboard in Resources */,
+				718B8D5A16C9BED8001E21B3 /* icon.png in Resources */,
+				718B8D5C16C9BEDC001E21B3 /* icon@2x.png in Resources */,
+				71E3745F16CAE64B002B53A5 /* laser.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		669180314D424CCE8C462CEE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		718B8D2F16C9BEAE001E21B3 /* Sources */ = {
@@ -176,6 +225,7 @@
 				718B8D4316C9BEAE001E21B3 /* main.m in Sources */,
 				718B8D4716C9BEAE001E21B3 /* DMAppDelegate.m in Sources */,
 				718B8D5316C9BEAE001E21B3 /* DMViewController.m in Sources */,
+				718B8D6016C9BF21001E21B3 /* SoundEffect.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +309,7 @@
 		};
 		718B8D5716C9BEAE001E21B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B709CD2284F43E489AD2753 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Lighthouse/Lighthouse-Prefix.pch";
@@ -270,6 +321,7 @@
 		};
 		718B8D5816C9BEAE001E21B3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B709CD2284F43E489AD2753 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Lighthouse/Lighthouse-Prefix.pch";
@@ -298,6 +350,7 @@
 				718B8D5816C9BEAE001E21B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
