@@ -29,6 +29,7 @@
     vibrateCount = [self.counterLabel.text integerValue];
     torchOn = NO;
     soundEffect = [[SoundEffect alloc] initWithSoundNamed:@"laser.wav"];
+    self.fireInterval.text = [NSString stringWithFormat:@"%0.1f s",self.firingIntervalStepper.value];
 }
 
 - (void)didReceiveMemoryWarning
@@ -53,7 +54,7 @@
 	while (progress < 1.0f) {
 		progress += 0.01f;
 		hud.progress = progress;
-		usleep(15000);
+		usleep(14000);
 	}
     
     // After the hud is dissolved, start the lighthouse
@@ -64,7 +65,7 @@
 
 - (void)startFiringFlashes {
     // A timer is created which will start the looping
-    double interval = [self.fireInterval.text doubleValue];
+    double interval = self.firingIntervalStepper.value;
     self.timer = [NSTimer scheduledTimerWithTimeInterval:interval
                                                   target:self
                                                 selector:@selector(processLoop)
@@ -79,9 +80,13 @@
             [soundEffect play];
         
         // Vibrate once
-        AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
+        if (self.motionToggle.on)
+            AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
+        
         // Flash on/off
-        [self toggleTorch];
+        if (self.lightsToggle.on)
+            [self toggleTorch];
+        
         // Decrement the label showing remaining loops
         self.counterLabel.text = [NSString stringWithFormat:@"%d",--vibrateCount];
     } else {
@@ -145,7 +150,7 @@
 }
 
 - (IBAction)stepperPressed:(UIStepper *)sender {
-    self.fireInterval.text = [NSString stringWithFormat:@"%0.1f",sender.value];
+    self.fireInterval.text = [NSString stringWithFormat:@"%0.1f s",sender.value];
 }
 
 @end

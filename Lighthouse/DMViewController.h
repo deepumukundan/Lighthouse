@@ -11,10 +11,16 @@
 
 @interface DMViewController : UIViewController <MBProgressHUDDelegate>
 
-@property (weak, nonatomic) IBOutlet UILabel *counterLabel;
-@property (weak, nonatomic) IBOutlet UISwitch *soundToggle;
+// Properties
+@property (weak, nonatomic) IBOutlet UIStepper *firingIntervalStepper;
 @property (weak, nonatomic) IBOutlet UILabel *fireInterval;
+@property (weak, nonatomic) IBOutlet UISwitch *soundToggle;
+@property (weak, nonatomic) IBOutlet UISwitch *lightsToggle;
+@property (weak, nonatomic) IBOutlet UISwitch *motionToggle;
 
+@property (weak, nonatomic) IBOutlet UILabel *counterLabel;
+
+// Methods
 - (IBAction)touchDetected:(UITapGestureRecognizer *)sender;
 - (IBAction)reportVerticalSwipe:(UISwipeGestureRecognizer *)sender;
 - (IBAction)reportHorizontalSwipe:(UISwipeGestureRecognizer *)sender;
