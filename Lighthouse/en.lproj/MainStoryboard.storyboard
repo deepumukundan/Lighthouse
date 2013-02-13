@@ -20,12 +20,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="1nU-xR-ayU">
-                                <rect key="frame" x="163" y="114" width="79" height="27"/>
+                                <rect key="frame" x="146" y="114" width="79" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="onTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </switch>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Sounds" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sTe-TB-fHZ">
-                                <rect key="frame" x="81" y="117" width="75" height="24"/>
+                                <rect key="frame" x="63" y="117" width="75" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -39,7 +39,7 @@
                                 </connections>
                             </stepper>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Fire Interval" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4uw-oc-iUW">
-                                <rect key="frame" x="59" y="82" width="84" height="24"/>
+                                <rect key="frame" x="54" y="82" width="84" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -53,24 +53,24 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="x9g-jJ-Gie">
-                                <rect key="frame" x="163" y="149" width="79" height="27"/>
+                                <rect key="frame" x="146" y="149" width="79" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="onTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </switch>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Lights" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RYH-pj-qGh">
-                                <rect key="frame" x="81" y="150" width="75" height="24"/>
+                                <rect key="frame" x="63" y="150" width="75" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="P6t-9E-vCh">
-                                <rect key="frame" x="163" y="183" width="79" height="27"/>
+                                <rect key="frame" x="146" y="183" width="79" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="onTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </switch>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Motion" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="77z-pB-XaY">
-                                <rect key="frame" x="81" y="186" width="75" height="24"/>
+                                <rect key="frame" x="63" y="186" width="75" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -135,6 +135,23 @@
             <point key="canvasLocation" x="-717" y="50"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="DMViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DMViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="reportHorizontalSwipe:" candidateClass="UISwipeGestureRecognizer"/>
+                <relationship kind="action" name="reportVerticalSwipe:" candidateClass="UISwipeGestureRecognizer"/>
+                <relationship kind="action" name="stepperPressed:" candidateClass="UIStepper"/>
+                <relationship kind="action" name="touchDetected:" candidateClass="UITapGestureRecognizer"/>
+                <relationship kind="outlet" name="counterLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="fireInterval" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="firingIntervalStepper" candidateClass="UIStepper"/>
+                <relationship kind="outlet" name="lightsToggle" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="motionToggle" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="soundToggle" candidateClass="UISwitch"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

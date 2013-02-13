@@ -321,7 +321,6 @@
 		};
 		718B8D5816C9BEAE001E21B3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0B709CD2284F43E489AD2753 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Lighthouse/Lighthouse-Prefix.pch";
