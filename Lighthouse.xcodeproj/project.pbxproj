@@ -311,10 +311,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0B709CD2284F43E489AD2753 /* Pods.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Deepu Mukundan (WG9U79JVJP)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Lighthouse/Lighthouse-Prefix.pch";
 				INFOPLIST_FILE = "Lighthouse/Lighthouse-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "C3C1255F-FDDB-486E-A6F8-9440D4FE2DFE";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -322,10 +324,12 @@
 		718B8D5816C9BEAE001E21B3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Deepu Mukundan (WG9U79JVJP)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Lighthouse/Lighthouse-Prefix.pch";
 				INFOPLIST_FILE = "Lighthouse/Lighthouse-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "C3C1255F-FDDB-486E-A6F8-9440D4FE2DFE";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
